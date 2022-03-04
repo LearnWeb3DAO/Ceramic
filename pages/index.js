@@ -29,8 +29,6 @@ function Home() {
   };
 
   useEffect(() => {
-    console.log(connection);
-
     if (connection.status !== "connected") {
       web3ModalRef.current = new Web3Modal({
         network: "rinkeby",
