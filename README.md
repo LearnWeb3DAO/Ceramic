@@ -215,7 +215,12 @@ For verification of this level, we will ask you to enter your profile's StreamID
     ```jsx
     import { Web3Provider } from "@ethersproject/providers"
     ```
-- As before, let's create a reference using the `useRef` react hook to a Web3Modal instance, and create a helper function to get the Provider.
+- Then import these react hooks from `react` and `Web3Modal` from `web3modal`.
+    ```jsx
+    import { useEffect, useRef, useState } from "react"
+    import Web3Modal from "web3modal"
+    ```
+- As before, let's create a reference using the `useRef` react hook to a Web3Modal instance in your `Home` function, and create a helper function to get the Provider.
     ```jsx
     const web3ModalRef = useRef();
     
