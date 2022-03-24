@@ -272,7 +272,7 @@ For verification of this level, we will ask you to enter your profile's StreamID
         return new EthereumAuthProvider(wrappedProvider.provider, address);
   };
     ```
-    `getEthereumAuthProvider` creates an instance of the `EthereumAuthProvider`. You may be wondering why we are passing it `wrappedProvider.provider` instead of `wrappedProvider` directly. It's because `ethers` abstracts away the low level provider calls with helper functions so it's easier for developers to use, but since not everyone uses ethers.js, Self.ID maintains a generic interface to actual provider specification, isntead of the `ethers` wrapped version. We can access the actual provider instance through the `provider` property on `wrappedProvider`.
+    `getEthereumAuthProvider` creates an instance of the `EthereumAuthProvider`. You may be wondering why we are passing it `wrappedProvider.provider` instead of `wrappedProvider` directly. It's because `ethers` abstracts away the low level provider calls with helper functions so it's easier for developers to use, but since not everyone uses ethers.js, Self.ID maintains a generic interface to actual provider specification, instead of the `ethers` wrapped version. We can access the actual provider instance through the `provider` property on `wrappedProvider`.
     `connectToSelfID` takes this Ethereum Auth Provider, and calls the `connect` function that we got from the `useViewerConnection` hook which takes care of everything else for us.
 - Now, getting to the frontend a bit.
 - Add the following code to the end of your `Home` function
