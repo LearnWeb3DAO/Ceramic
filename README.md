@@ -100,7 +100,7 @@ Self.ID is a single, high level, library that encapsulates 3ID accounts, creatin
 
 The SDK also includes popular use cases like multi-chain user profiles built in, which makes it very easy for developers to retrieve and store multi-chain data linked to a 3ID.
 
-## BUIDL
+## BUILD
 
 We will create a simple Next.js application, which uses Self.ID. It will allow users to login to the website using their wallet of choice, which will be linked to their 3ID. Then, we will allow the user to write some data to their decentralized profile, and be able to retrieve it from the Ceramic Network.
 
