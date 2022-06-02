@@ -111,9 +111,9 @@ For verification of this level, we will ask you to enter your profile's StreamID
     npx create-next-app@latest Ceramic-Tutorial
     ```
     and press `Enter` for all the question prompts. This should create the `Ceramic-Tutorial` folder and setup the `next` app inside it. It will also initialize a git repository you can push to GitHub after making changes.
-- Let's now install the Self.ID npm packages to get started. From inside the `Ceramic-Tutorial` folder, run the following in your terminal
+- Let's now install the Self.ID npm packages, and a dependent library, to get started. From inside the `Ceramic-Tutorial` folder, run the following in your terminal
     ```bash
-    npm install @self.id/react @self.id/web
+    npm install @self.id/react @self.id/web key-did-provider-ed25519
     ```
 - Let's also install the `ethers` and `web3modal` packages that we will be using to support wallet connections
     ```bash
